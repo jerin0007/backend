@@ -21,9 +21,6 @@ app.config['CORS_HEADERS'] = 'Content-Type'
 cors = CORS(app, resources={r"/static/*": {"origins": "*"}})
 
 
-os.environ["NVIDIA_API_KEY"] = "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"
-
-
 @app.route('/')
 @cross_origin()
 def index():
